@@ -64,7 +64,14 @@ namespace BaiTapPhanSo
             Phanso ketqua = new Phanso(ts, ms);
             return ketqua;
         }
-    
+
+        public int UCLN()
+        {
+            while (tu != mau)
+                if (tu > mau) tu = tu - mau;
+                else mau = mau - tu;
+            return tu;
+        }
 
         public Phanso RutGon()
         {
